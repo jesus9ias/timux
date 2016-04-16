@@ -1,0 +1,21 @@
+{
+  "name": "timux",
+  "version": "1.0.0",
+  "description": "Test execution time of your code",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesus9ias/timux.git"
+  },
+  "keywords": [
+    "execution",
+    "time"
+  ],
+  "author": "Jesús Escamilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jesus9ias/timux/issues"
+  },
+  "homepage": "https://github.com/jesus9ias/timux#readme"
+}
