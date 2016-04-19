@@ -16,6 +16,16 @@ function end(key){
   }
 }
 
+function endAll(){
+  for(i in tests){
+    if(tests[i] == null){
+      console.log('the key ' + i + ' was not created and can not be ended');
+    }else{
+        tests[i].end = Date.now();
+    }
+  }
+}
+
 function report(key){
   if(tests[key] == null){
     console.log('the key ' + key + ' was not created and can not be reported');
@@ -28,8 +38,24 @@ function report(key){
   }
 }
 
+function reportAll(){{
+  for(i in tests){
+    if(tests[i] == null){
+      console.log('the key ' + key + ' was not created and can not be reported');
+    }else{
+      if(typeof tests[i].end == 'undefined'){
+        tests[i].end = Date.now();
+      }}
+      tests[i].report = tests[i].end - tests[i].init;
+      console.log(tests[i].report);
+    }
+  }
+}
+
 module.exports = {
   init: init,
   end: end,
-  report: report
+  report: report,
+  endAll: endAll,
+  reportAll: reportAll
 };
