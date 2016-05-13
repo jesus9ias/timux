@@ -26,7 +26,7 @@ In all of this methods you must give a key that identify the part of code that y
 timux.init('home');
 // Ends the operation
 timux.end('home');
-// Gets the tiem in milliseconds.
+// Gets the time in milliseconds.
 timux.report('home');
 ```
 
@@ -43,6 +43,6 @@ setTimeout(function(){
 },2153);
 ```
 
-## Contrinutions
+## Contributions
 
 All pull requests are welcome.
